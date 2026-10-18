@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kings' Valley Secrets - VR Game | Greentech Software</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandGreen: '#10b981',
+                        brandDark: '#0a0f0d',
+                        brandGold: '#f59e0b',
+                        cardDark: '#111827'
+                    },
+                    fontFamily: {
+                        orbitron: ['Orbitron', 'sans-serif'],
+                        rajdhani: ['Rajdhani', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0f0d;
+            color: #e5e7eb;
+            font-family: 'Rajdhani', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(180deg, rgba(10,15,13,0.7) 0%, rgba(10,15,13,1) 100%), 
+                        url('https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.25);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brandGreen selection:text-black">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-brandDark/90 backdrop-blur-md border-b border-brandGreen/20 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-vr-cardboard text-3xl text-brandGreen"></i>
+                <span class="font-orbitron text-xl font-bold tracking-wider text-white">GREENTECH <span class="text-brandGreen">SOFTWARE</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-semibold tracking-wide">
+                <a href="#about" class="hover:text-brandGreen transition">ABOUT</a>
+                <a href="#features" class="hover:text-brandGreen transition">FEATURES</a>
+                <a href="#levels" class="hover:text-brandGreen transition">LEVELS</a>
+                <a href="#tech" class="hover:text-brandGreen transition">TECH STACK</a>
+            </div>
+            <a href="#contact" class="bg-brandGreen hover:bg-emerald-400 text-black font-bold px-5 py-2 rounded-lg transition font-orbitron text-sm">INVESTOR PITCH</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg min-h-screen flex items-center justify-center text-center px-4 pt-20">
+        <div class="max-w-4xl mx-auto space-y-6">
+            <div class="inline-block border border-brandGold/40 bg-brandGold/10 text-brandGold px-4 py-1 rounded-full text-sm font-semibold tracking-widest uppercase mb-2">
+                <i class="fa-solid fa-cube mr-2"></i> Next-Gen VR Tourism Experience
+            </div>
+            <h1 class="font-orbitron text-4xl md:text-7xl font-black text-white tracking-tight uppercase leading-tight">
+                Kings' Valley <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandGreen via-emerald-300 to-brandGold">Secrets</span>
+            </h1>
+            <p class="text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto font-medium">
+                Step into Ancient Egypt through real-player 3D avatar scanning and AI-driven interactive history.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 pt-6">
+                <a href="#levels" class="bg-brandGreen hover:bg-emerald-400 text-black font-bold font-orbitron px-8 py-4 rounded-xl text-lg transition glow-effect">
+                    EXPLORE LEVELS
+                </a>
+                <a href="#tech" class="border border-brandGreen/40 hover:bg-brandGreen/10 text-white font-bold font-orbitron px-8 py-4 rounded-xl text-lg transition">
+                    VIEW TECH STACK
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 border-t border-brandGreen/10">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="font-orbitron text-3xl md:text-4xl font-bold text-white uppercase border-l-4 border-brandGreen pl-4">
+                    Revolutionizing Cultural Tourism
+                </h2>
+                <p class="text-gray-400 text-lg leading-relaxed">
+                    Developed by <strong class="text-white">Greentech For Mobile Software</strong> (Operating under Law 72 of 2017 in Egypt), <span class="text-brandGreen">Kings' Valley Secrets</span> combines cutting-edge Virtual Reality with artificial intelligence to immerse tourists directly into thousands of years of Egyptian history.
+                </p>
+                <div class="grid grid-cols-2 gap-4 pt-4">
+                    <div class="p-4 bg-cardDark rounded-lg border border-gray-800">
+                        <i class="fa-solid fa-user-astronaut text-2xl text-brandGreen mb-2"></i>
+                        <h4 class="font-bold text-white">Real-Player Scan</h4>
+                        <p class="text-sm text-gray-400">Embody your true likeness as a 3D Avatar inside the virtual world.</p>
+                    </div>
+                    <div class="p-4 bg-cardDark rounded-lg border border-gray-800">
+                        <i class="fa-solid fa-robot text-2xl text-brandGold mb-2"></i>
+                        <h4 class="font-bold text-white">AI Cinematics</h4>
+                        <p class="text-sm text-gray-400">Generative AI historical introductions and multilingual NPCs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="w-full h-80 md:h-96 bg-cardDark rounded-2xl border border-brandGreen/30 overflow-hidden flex items-center justify-center glow-effect">
+                    <i class="fa-solid fa-monument text-8xl text-brandGreen/20"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historical Levels -->
+    <section id="levels" class="py-20 px-6 bg-black/40">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="text-center space-y-4">
+                <h2 class="font-orbitron text-3xl md:text-5xl font-bold text-white uppercase">Historical Journey</h2>
+                <p class="text-gray-400 max-w-xl mx-auto">Explore four distinct eras of Egyptian history, each featuring custom mechanics and cinematic AI guides.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-cardDark p-6 rounded-2xl border border-gray-800 hover:border-brandGreen/50 transition">
+                    <span class="text-brandGreen font-orbitron text-sm font-bold">LEVEL 01</span>
+                    <h3 class="font-orbitron text-xl font-bold text-white mt-1 mb-3">The Unification</h3>
+                    <p class="text-gray-400 text-sm">Experience the historic uniting of Upper and Lower Egypt under King Narmer.</p>
+                </div>
+                <div class="bg-cardDark p-6 rounded-2xl border border-gray-800 hover:border-brandGreen/50 transition">
+                    <span class="text-brandGreen font-orbitron text-sm font-bold">LEVEL 02</span>
+                    <h3 class="font-orbitron text-xl font-bold text-white mt-1 mb-3">Pyramid Builders</h3>
+                    <p class="text-gray-400 text-sm">Uncover the engineering marvels, cosmic alignments, and construction secrets.</p>
+                </div>
+                <div class="bg-cardDark p-6 rounded-2xl border border-gray-800 hover:border-brandGold/50 transition">
+                    <span class="text-brandGold font-orbitron text-sm font-bold">LEVEL 03</span>
+                    <h3 class="font-orbitron text-xl font-bold text-white mt-1 mb-3">Lost Technologies</h3>
+                    <p class="text-gray-400 text-sm">Dive into mythological realms, ancient papyri, and forgotten scientific theories.</p>
+                </div>
+                <div class="bg-cardDark p-6 rounded-2xl border border-gray-800 hover:border-brandGreen/50 transition">
+                    <span class="text-brandGreen font-orbitron text-sm font-bold">LEVEL 04</span>
+                    <h3 class="font-orbitron text-xl font-bold text-white mt-1 mb-3">Valley of the Kings</h3>
+                    <p class="text-gray-400 text-sm">Join the golden age of archaeological discovery and royal tomb exploration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="tech" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto space-y-12">
+            <div class="text-center space-y-4">
+                <h2 class="font-orbitron text-3xl md:text-4xl font-bold text-white uppercase">Technology Architecture</h2>
+                <p class="text-gray-400">Powered by industry-standard real-time engines and artificial intelligence.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-6 bg-cardDark rounded-xl border border-gray-800">
+                    <i class="fa-solid fa-gamepad text-4xl text-brandGreen mb-3"></i>
+                    <h4 class="font-bold text-white">Unreal Engine 5</h4>
+                    <p class="text-xs text-gray-400 mt-1">Nanite & Lumen Photorealism</p>
+                </div>
+                <div class="p-6 bg-cardDark rounded-xl border border-gray-800">
+                    <i class="fa-solid fa-code text-4xl text-brandGreen mb-3"></i>
+                    <h4 class="font-bold text-white">C++ & C#</h4>
+                    <p class="text-xs text-gray-400 mt-1">High-Performance Core Logic</p>
+                </div>
+                <div class="p-6 bg-cardDark rounded-xl border border-gray-800">
+                    <i class="fa-solid fa-brands fa-python text-4xl text-brandGold mb-3"></i>
+                    <h4 class="font-bold text-white">Python AI Tools</h4>
+                    <p class="text-xs text-gray-400 mt-1">LLM & Voice Synthesis Pipeline</p>
+                </div>
+                <div class="p-6 bg-cardDark rounded-xl border border-gray-800">
+                    <i class="fa-solid fa-vr-cardboard text-4xl text-brandGreen mb-3"></i>
+                    <h4 class="font-bold text-white">OpenXR SDK</h4>
+                    <p class="text-xs text-gray-400 mt-1">Cross-Platform VR Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-black py-12 px-6 border-t border-gray-900 text-center text-gray-500 text-sm">
+        <div class="max-w-4xl mx-auto space-y-4">
+            <p class="font-orbitron text-white text-base">GREENTECH FOR MOBILE SOFTWARE</p>
+            <p>Established under Egyptian Investment Law No. 72 of 2017 | 6th of October, Egypt</p>
+            <p class="text-xs text-gray-600">&copy; 2026 Greentech Software. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
