@@ -1,0 +1,17 @@
+# Unreal Engine / Unity temporary files
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+Library/
+Logs/
+obj/
+*.csproj
+*.sln
+*.user
+.vs/
+
+# Large binaries & archives
+*.zip
+*.rar
+*.pak
